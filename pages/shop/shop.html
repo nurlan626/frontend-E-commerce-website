@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <title></title>
+</head>
+
+<body>
+    <section class="container my-4">
+        <h1 class="my-3">
+            Shop
+        </h1>
+        <div class="row">
+            <div class="col-2">
+                <div>
+                    <input type="search" placeholder="search" class="searchInput form-control mb-3 w-100">
+                </div>
+                <div class="border-bottom my-3 py-2">
+                    <h3>
+                        Category
+                    </h3>
+                    <div class="categories ps-3 fw-bold fs-5 ">
+                        <!-- <div class="my-1">Smartphone</div> -->
+
+
+                    </div>
+                </div>
+                <div class="border-bottom my-3 py-2">
+                    <h3>
+                        Rate
+                    </h3>
+                    <div class="ps-3 fw-bold fs-5 ">
+                        <div class="rates my-1">
+                            <div class="rate" data-rate="5">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <div class="rate" data-rate="4">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <div class="rate" data-rate="3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+
+                            </div>
+                            <div class="rate" data-rate="2">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <div class="rate" data-rate="1">
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10">
+                <div class="w-25 mb-3">
+                    <button class="btn btn-danger mb-2 allProductsBtn">All products</button>
+                    <select class="form-select sortSelect" aria-label="Sort products by price">
+                        <option selected>Sort by</option>
+                        <option value="1">Price: Low to High</option>
+                        <option value="2">Price: High to Low</option>
+                    </select>
+                </div>
+                <div class="row row-cols-2 row-cols-md-4 g-4 products">
+                    <div class="col ">
+                        <div class="card h-100 border-0">
+                            <div class="bg-light-grey p-3">
+                                <!-- <i class="bi bi-heart-fill text-danger"></i> -->
+                                <!-- <i class="bi bi-heart text-danger"></i> -->
+                                <a href="/pages/product/product.html" class="productImage">
+                                    <img src="https://m.media-amazon.com/images/I/71LMiD9i+ML._AC_SL1500_.jpg"
+                                        class="card-img-top" alt="...">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">HAVIT HV-G92 Gamepad</h6>
+                                <p class="card-text">
+                                <div class="text-danger">
+                                    120$
+                                </div>
+                                <div>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-secondary"></i>
+                                    <span class="text-secondary">(88)</span>
+                                </div>
+                                <div>
+                                    <button class="btn btn-dark w-100 my-2" onclick="() => addtoCart(wewe)">add to
+                                        cart</button>
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+    <script type="module" src="/js/script.js"></script>
+    <script  type="module" src="./shop.js"></script>
+</body>
+
+</html>
